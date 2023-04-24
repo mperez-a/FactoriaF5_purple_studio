@@ -102,9 +102,19 @@ footer{
     margin: 15px;
 }
 h3{
-    color: blue;
     display: flex;
     justify-content: center;
+}
+p{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.logoLinkedin{
+    width: 45px;
+    margin: auto;
+
 }
 
 
