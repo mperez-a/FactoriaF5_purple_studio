@@ -6,7 +6,7 @@
     background-color: #FF7F99;
     display: flex;
     justify-content: space-between;
-    width: 1550px;
+    width: 1400px;
     height: 100px;
 }
 
@@ -19,10 +19,10 @@ main{
 .logo{
     width: 155px;
 }
-.titleLogo{
+.titleHeader{
     font-size: 36px;
     align-self: center;
-    margin-left: -320px;
+    margin-right: 600px;
 }
 nav{
     display: flex;
@@ -92,7 +92,7 @@ nav{
 footer{
     margin-top: 20px;
     background-color: #FF7F99;
-    width: 1550px;
+    width: 1400px;
     height: 500px;
     display: flex;
 }
