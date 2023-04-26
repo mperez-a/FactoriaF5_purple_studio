@@ -9,17 +9,17 @@
 </head>
 <body>
 	<header>
-        <span class="logo">Purple<b class="logo-studio" id="logo-std">STUDIO</b></B></span>
+        <span class="logo"><a href="../index.html" class="link-index">Purple<b class="logo-studio" id="logo-std">STUDIO</b></a></span>
         <!--<nav class="navigation">
             <a href="/index.html">Somos</a>
             <a href="#team">Equipo</a>
             <button class="button-contact"><a href="/contactForm/contactForm.html" class="link-contact">Contáctenos</a></button>
         </nav>-->
     </header>
-	<main>
+	<main class="main-form">
 		<h1>Formulario de Contacto</h1>
 		<p>Por favor rellene todos los campos solicitados</p>
-		<form action="post">
+		<form action="post" name="contact-form">
 			<fieldset>
 				<label for="firs-name">Nombre: <input type="text" id="first-name" class="first-name" required></label>
 				<label for="last-name">Apellido: <input type="text" name="last-name" id="last-name" required></label>
@@ -28,7 +28,7 @@
 				<label for="email">Email: <input type="email" name="email" id="email" required></label>
 			</fieldset>
 			<fieldset>
-				<label for="time-contact">¿En qué horario te vendría bien para que te contactemos?
+				<label for="time-contact">¿En qué horario te vendría bien que te contactemos?
 					<select name="time-contact" id="time-contact">
 						<option value="">(Selecciona una opción)</option>
 						<option value="1">Mañana (9:00 - 12:00)</option>
@@ -37,6 +37,9 @@
 				</label>
 				<label for="coments">Comentarios:
 					<textarea name="coments" id="coments" cols="30" rows="10" placeholder="Escribe tus comentarios aquí"></textarea>
+				</label>
+				<label for="terms-and-conditions">
+					<input type="checkbox" id="terms-and-conditios" class="terms-and-conditios" required> I accept the <a href="#">terms and conditios</a>
 				</label>
 			</fieldset>
 			<input type="submit" value="Submit">
