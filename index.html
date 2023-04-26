@@ -9,63 +9,108 @@
 </head>
 <body>
     <header>
-        <span class="logo-purple">Purple<b class="logo-studio">STUDIO</b></B></span>
-        <nav>
+        <span class="logo">Purple<b class="logo-studio" id="logo-std">STUDIO</b></B></span>
+        <nav class="navigation">
             <a href="/index.html">Somos</a>
-            <a href="#">Equipo</a>
-            <button class="button-contact">Contáctenos</button>
+            <a href="#team">Equipo</a>
+            <button class="button-contact"><a href="/contactForm/contactForm.html" class="link-contact">Contáctenos</a></button>
         </nav>
     </header>
     <main>
-        <div>
-            <img src="/img/pruebaCoders.png" alt="coders picture">
+        <div class="bg-div">
+            <img class="coders" src="/img/pruebaCoders.png" alt="coders picture">
         </div>
-        <h1>Consultores Tecnológicos</h1>
-        <p>Especialistas en Desarrollo Web</p>
-        <button>Te llamamos</button>
+        <div class="main-text">
+            <h1 class="title">Consultores<br>Tecnológicos</h1>
+            <h3 class="legend">Especialistas en Desarrollo Web<h3>
+            <button class="contact">Te llamamos</button>
+        </div>
     </main>
     <footer id="team">
-        <ul>
+        <div class="cards-container">
+            <div class="card">
+                <a href="" class="card">
+                    <img src="/img/imgValen.png" alt="Valetina Purple Studio coder">
+                    <span class="coder-name">Valentina Rios</span>
+                    <span class="legend-coder">Especialista en Desarrollo Web</span>
+                </a>
+                <a href="#" target="_blank"><img src="/img/logoLinkedin.png" alt="icon Linkedin" class="icon"></a>
+            </div>
+            <div class="card">
+                <a href="" class="card">
+                    <img src="/img/imgRosa.png" alt="Rosa Purple Studio coder">
+                    <span class="coder-name">Rosa Pedret</span>
+                    <span class="legend-coder">Especialista en Desarrollo Web</span>
+                </a>
+            <a href="#" target="_blank"><img src="/img/logoLinkedin.png" alt="icon Linkedin" class="icon"></a>
+            </div>
+            <div class="card">
+                <a href="" class="card">
+                    <img src="/img/imgManu.png" alt="Manuela Purple Studio coder">
+                    <span class="coder-name">Manuela Perez</span>
+                    <span class="legend-coder">Especialista en Desarrollo Web</span>
+                </a>
+            <a href="https://www.linkedin.com/in/manuela-perez-agudelo/" target="_blank"><img src="/img/logoLinkedin.png" alt="icon Linkedin" class="icon"></a>
+            </div>
+            <div class="card">
+                <a href="" class="card">
+                    <img src="/img/imgMoni.png" alt="Monica Purple Studio coder">
+                    <span class="coder-name">Monica Blanco</span>
+                    <span class="legend-coder">Especialista en Desarrollo Web</span>
+                </a>
+                <a href="https://www.linkedin.com/in/monicablancocalvi%C3%B1o/" target="_blank"><img src="/img/logoLinkedin.png" alt="icon Linkedin" class="icon"></a>
+            </div>
+            <div class="card">
+                <a href="" class="card">
+                    <img src="/img/imgYana.png" alt="Yana Purple Studio coder">
+                    <span class="coder-name">Yana Tolstobrova</span>
+                    <span class="legend-coder">Especialista en Desarrollo Web</span>
+                </a>
+                <a href="https://www.linkedin.com/in/yana-tolstobrova/" target="_blank"><img src="/img/logoLinkedin.png" alt="icon Linkedin" class="icon"></a>
+            </div>
+        </div>
+        <!--<ul>
             <li>
-                <img src="/img/imgValen.png" alt="Valetina Purple Studio coder">
-                <a href="#">Valentina Rios</a>
-                <span>Especialista en Desarrollo Web</span>
-                <a href="#"><img src="/img/logoLinkedin.png" alt="Linkedin Icon"></a>
+                <a href="" class="card">
+                    <img src="/img/imgValen.png" alt="Valetina Purple Studio coder">
+                    <span>Valentina Rios</span>
+                    <span>Especialista en Desarrollo Web</span>
+                </a>
+                <a href="#" target="_blank"><img src="/img/logoLinkedin.png" alt="icon Linkedin" class="icon"></a>
             </li>
             <li>
-                <img src="/img/imgRosa.png" alt="Rosa Purple Studio coder">
-                <a href="#">Rosa Pedret</a>
-                <span>Especialista en Desarrollo Web</span>
-                <a href="#"><img src="/img/logoLinkedin.png" alt="Linkedin Icon"></a>
+                <a href="" class="card">
+                    <img src="/img/imgRosa.png" alt="Rosa Purple Studio coder">
+                    <span>Rosa Pedret</span>
+                    <span>Especialista en Desarrollo Web</span>
+                </a>
+            <a href="#" target="_blank"><img src="/img/logoLinkedin.png" alt="icon Linkedin" class="icon"></a>
             </li>
             <li>
-                <img src="/img/imgManu.png" alt="Manuela Purple Studio coder">
-                <a href="#">Manuela Perez</a>
-                <span>Especialista en Desarrollo Web</span>
-                <a href="#"><img src="/img/logoLinkedin.png" alt="Linkedin Icon"></a>
+                <a href="" class="card">
+                    <img src="/img/imgManu.png" alt="Manuela Purple Studio coder">
+                    <span>Manuela Perez</span>
+                    <span>Especialista en Desarrollo Web</span>
+                </a>
+            <a href="https://www.linkedin.com/in/manuela-perez-agudelo/" target="_blank"><img src="/img/logoLinkedin.png" alt="icon Linkedin" class="icon"></a>
             </li>
             <li>
-                <img src="/img/imgMoni.png" alt="Monica Purple Studio coder">
-                <a href="#">Monica Blanco</a>
-                <span>Especialista en Desarrollo Web</span>
-                <a href="#"><img src="/img/logoLinkedin.png" alt="Linkedin Icon"></a>
+                <a href="" class="card">
+                    <img src="/img/imgMoni.png" alt="Monica Purple Studio coder">
+                    <span>Monica Blanco</span>
+                    <span>Especialista en Desarrollo Web</span>
+                </a>
+                <a href="https://www.linkedin.com/in/monicablancocalvi%C3%B1o/" target="_blank"><img src="/img/logoLinkedin.png" alt="icon Linkedin" class="icon"></a>
             </li>
             <li>
-                <img src="/img/imgYana.png" alt="Yana Purple Studio coder">
-                <a href="#">Yana Tolstobrova</a>
-                <span>Especialista en Desarrollo Web</span>
-                <a href="#"><img src="/img/logoLinkedin.png" alt="Linkedin Icon"></a>
+                <a href="" class="card">
+                    <img src="/img/imgYana.png" alt="Yana Purple Studio coder">
+                    <span>Yana Tolstobrova</span>
+                    <span>Especialista en Desarrollo Web</span>
+                </a>
+                <a href="https://www.linkedin.com/in/yana-tolstobrova/" target="_blank"><img src="/img/logoLinkedin.png" alt="icon Linkedin" class="icon"></a>
             </li>
-        </ul>
+        </ul>-->
     </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-

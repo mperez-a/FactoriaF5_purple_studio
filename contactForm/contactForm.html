@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style.css">
+	<title>Contact Form</title>
+</head>
+<body>
+	<header>
+        <span class="logo">Purple<b class="logo-studio" id="logo-std">STUDIO</b></B></span>
+        <!--<nav class="navigation">
+            <a href="/index.html">Somos</a>
+            <a href="#team">Equipo</a>
+            <button class="button-contact"><a href="/contactForm/contactForm.html" class="link-contact">Contáctenos</a></button>
+        </nav>-->
+    </header>
+	<main>
+		<h1>Formulario de Contacto</h1>
+		<p>Por favor rellene todos los campos solicitados</p>
+		<form action="post">
+			<fieldset>
+				<label for="firs-name">Nombre: <input type="text" id="first-name" class="first-name" required></label>
+				<label for="last-name">Apellido: <input type="text" name="last-name" id="last-name" required></label>
+				<label for="contact-number">Teléfono de contacto: <input type="number" id="contact-number" class="contact-number" min="9" max="9" required></label>
+				<label for="number">Teléfono fijo (opcional): <input type="number" id="number" class="number" min="7" max="7"></label>
+				<label for="email">Email: <input type="email" name="email" id="email" required></label>
+			</fieldset>
+			<fieldset>
+				<label for="time-contact">¿En qué horario te vendría bien para que te contactemos?
+					<select name="time-contact" id="time-contact">
+						<option value="">(Selecciona una opción)</option>
+						<option value="1">Mañana (9:00 - 12:00)</option>
+						<option value="2">Tarde (14:00 - 18:00)</option>
+					</select>
+				</label>
+				<label for="coments">Comentarios:
+					<textarea name="coments" id="coments" cols="30" rows="10" placeholder="Escribe tus comentarios aquí"></textarea>
+				</label>
+			</fieldset>
+			<input type="submit" value="Submit">
+		</form>
+	</main>
+</body>
+</html>

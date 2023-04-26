@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap');
 
 * {
@@ -16,23 +16,22 @@ header {
     padding: 0 60px;
 }
 
-.logo-purple {
-    font-family: 'Alumni Sans', sans-serif;
-    color: #ffffff;
-    font-size: 48px;
-}
-
-.logo-studio {
-    font-family: 'Alumni Sans', sans-serif;
-    color: #ffca41;
-}
-
-a {
-    text-decoration: none;
+.logo {
     color: white;
 }
 
-nav a {
+.logo, .logo-studio {
+    font-family: 'Alumni-sans', sans-serif;
+    font-size: 48px;
+}
+
+#logo-std {
+    color: #ffca41;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
     font-size: 24px;
     margin-left: 55px;
 }
@@ -40,9 +39,104 @@ nav a {
 .button-contact {
     color: white;
     font-size: 24px;
-    background-color: rgba(255, 202, 65, 0.35);
-    border: 1px solid #ffca41;
     border-radius: 35px;
-    padding: 10px 20px;
+    background-color: #ff9593;
+    border: 1px solid #ffca41;
+    padding: 10px 40px;
     margin-left: 55px;
 }
+
+a.link-contact {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*width: 1200px;*/
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-div {
+    background-color: #ff7f99;
+    border-radius: 272px 0 272px 272px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 37px 150px;
+}
+
+img.coders {
+    height: 454px;
+}
+
+.main-text {
+    padding-bottom: 40px;
+}
+
+.title {
+    color: #cd5c6e;
+    font-size: 96px;
+}
+
+.legend {
+    font-size: 36px;
+}
+
+.contact {
+    background-color: #ffca41;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 25px;
+}
+
+footer {
+    background-color: #ff7f99;
+    display: flex;
+}
+
+footer img {
+    height: 277px;
+}
+
+img.icon {
+    height: 42px;
+    border-radius: 6px;
+}
+
+.cards-container {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Agregar esta línea */
+    overflow-x: auto; /* Agregar esta línea para permitir desplazamiento horizontal en caso de ser necesario */
+    padding: 45px 45px 90px 45px;
+}
+
+.coder-name {
+    font-size: 24px;
+    color: white;
+}
+
+.legend-coder {
+    font-size: 18px;
+    color: black;
+}
+
+.card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: -13px;
+    text-decoration: none;
+}
+
+/* ************* FORM ************** */
+
