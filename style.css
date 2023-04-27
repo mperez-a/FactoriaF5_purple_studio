@@ -204,7 +204,6 @@ body {
 
 .main-form {
     background-color: #ffffff;
-    
     color: black;
 }
 
@@ -214,19 +213,22 @@ body {
 
 .title-form {
     border-top: 10px solid #FFCA41;
-    font-size: 70px;
+    font-size: 50px;
     padding-top: 20px;
 }
 
 .p-form {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 form {
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     height: 70%;
     margin: 0 auto;
-    padding: 20px 100px;
+    padding: 20px 0 40px 0;
+    align-items: center;
 }
 
 fieldset {
@@ -243,14 +245,14 @@ fieldset:last-of-type {
     border-top: 3px solid #FF9593;
 }
 
-.fs1, .fs2 {
-    display: flex;
-    flex-direction: column;
-}
-
 label {
     display: block;
     font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 500px;
 }
 
 input, textarea {
@@ -258,3 +260,21 @@ input, textarea {
     border: 1px solid #FFCA41;
     color: #000000;
 }
+
+textarea {
+    width: 500px;
+    height: auto;
+}
+
+#time-contact {
+    width: 500px;
+}
+
+div {
+    display: inline;
+    justify-content: space-between;
+}
+
+#reset, #submit {
+    width: 100px;
+} 
