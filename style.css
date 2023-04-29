@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;700&family=Jost:wght@200;400&display=swap');
 
-* {
+*{
     margin: 0px;
     font-family: 'Jost', sans-serif;
 }
-
-header {
+/*header*/
+header{
     background-color: #FF7F99;
     height: 100px;
     display: flex;
@@ -14,117 +13,154 @@ header {
     align-items: center;
     padding: 0px 60px;
 }
-
-.logo {
+.logo{
     font-family: 'Alumni Sans', sans-serif;
     color: #FFFFFF;
     font-size: 48px;
     align-items: baseline;
 }
-
-.logo-studio {
+.logo-studio{
     font-family: 'Alumni Sans', sans-serif;
     color: #FFCA41;
 }
-
-nav a {
+nav a{
     text-decoration: none;
     color: white;
-    font-weight: 300;
+}
+nav a {
+    font-weight: 200;
     font-size: 24px;
     margin-left: 55px;
 }
-
-nav a:hover {
+nav a:hover{
     color: #FFCA41;
 }
-
-.button-contact {
+.link-button{
+    margin: 0;
+}
+.button-contact{
     color: white;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 200;
+    letter-spacing: em;
     background-color: #FF9593;
     border: 1px solid #FFCA41;
     border-radius: 35px;
-    padding: 10px 40px;
+    padding: 8px 40px;
     margin-left: 45px;
 }
-
-.button-contact:hover {
+.button-contact:hover{
     background-color: #FFCA41;
 }
-
-.link-contact {
-    margin: 0;
-}
-
-.halo {
-    display: flex;
-    justify-content: space-evenly;
+/*main page flexbox with 2 divs*/
+.hero-main{
+    display: flex; 
+    width: 85%;
     align-items: center;
-    width: 95%;
-    padding: 2.5em 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
-
-.bg-div {
+/*part left*/
+.bg-div{
     background-color: #FF7F99;
     border-radius: 272px 0px 272px 272px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 37px 150px;
+    margin: 40px;
+    width: 544px;
+    height: 544px;
 }
-
-img.coders {
-    height: 454px;                     
+img.coders{
+    height: 454px;
+    margin: 150px;                     
 }
-
-.main-text {
-    width: 514px;
-    padding-bottom: 40px;
+/*part right*/
+.main-text{
+    width: 520px;
+    margin-left: 80px;
+    padding-bottom: 60px;
 }
-
-h1 {
+h1{
     font-size: 96px;
     line-height: 70px;
     font-weight: 400;
     color: #CD5C6E;
 }
-
-h3 {
+h3{
     font-size: 26px;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 25px;
 }
-
-button.action {
+button.action-main, button.action{
     background-color: #FFCA41;
-    border-radius: 25px;
+    border-radius: 35px;
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 400;
     border: none;
-    padding: 15px 25px;
+    padding: 15px 40px;
+}
+/*personal page flexbox with 2 divs*/
+.hero{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+/*part left*/
+.box-left{
+    position: relative;
+    box-sizing: border-box;
+}
+.girls{
+    position: absolute;
+    height: 615px; 
+    top: 2px;
+    left: -34px;          
+}
+.bg{
+    background-color: #FF7F99;
+    border-radius: 272px 0px 272px 272px;
+    width: 544px;
+    height: 544px;
+    margin: 40px 0;
+}
+/*part right*/
+.main-text2{
+    padding-top: 80px;
+    width: 520px;
+    margin-left: 80px;
+}
+.text{
+    font-size: 20px;
+    text-align: justify;
+}
+.contacts{
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+button.action{
+    padding: 10px 40px;
 }
 
-footer {
+/*footer*/
+footer{
     background-color: #FF7F99;
     display: flex;
 }
-
-footer img {
+footer img{
     height: 277px;
 }
-
-img.icon {
-    height: 42px;
+img.icon{
+    height: 49px;
+    width: 49px;
     border-radius: 6px;
+    margin-right: 20px;
 }
-
-ul {
+ul{
     list-style: none;
     text-align: center;
     display: flex;
@@ -134,147 +170,74 @@ ul {
     margin-right: auto;
     padding: 45px 45px 90px 45px;
 }
-
-ul li:first-of-type {
+ul li:first-of-type{
     padding-left: 20px;
 }
-
-a.card span:nth-child(2) {
+a.card span:nth-child(2){
     color: white;
     font-size: 24px;
+    font-weight: 300;
     margin-top: -20px;
-    
 }
-
-a.card span:nth-child(3) {
+a.card span:nth-child(3){
     font-size: 18px;
     margin-bottom: 10px;
     color: black;
 }
-
-a.card {
+a.card{
     display: flex;
     flex-direction: column;
     margin-left: -20px;
     text-decoration: none;
 }
-
-@media screen and (max-width: 1300px) {
-    header {
+/*for small laptops and big tablets*/
+@media screen and (max-width: 1201px) {
+    header{
         padding: 0 1em;
     }
-
-    .bg-div {
+    .bg-div{
         display: none;
     }
-
-    .halo {
+    .hero-main{
         padding: 5em;
-        justify-content: center;
+        justify-content: space-evenly;
         text-align: center;
     }
-
+    .main-text{
+        margin-left: 0px;
+    }
     ul {
         flex-wrap: wrap;
     }
-}
-
-@media screen and (max-width:375px) {
-    div.main-text {
-        width: 400px;
+    .hero{
+        align-items: unset;
     }
-
-    div.halo {
-        padding: 0em;
+    .bg{
+        width: 250px;
+        height: 250px;
+        border-radius: 125px 0 125px 125px;
+        margin: 0px;
+    }
+    .girls{
+        height: 277px; 
+        top: -13px;
+        left: -13px;          
+    }
+    .main-text2{
+        padding: 0;
+    }
+    .hero{
+        padding: 40px;
+        justify-content: center;
+    }
+}
+/* in process...
+@media screen and (max-width: 576px) {
+    div.hero-main{
+        padding: 80px 0;
         justify-content: center;
         text-align: center;
     }
 }
 
-/* ************* FORM ************** */
-
-.link-index {
-    text-decoration: none;
-    color: white;
-}
-
-body {
-    font-family: 'Jost', sans-serif;
-}
-
-.main-form {
-    background-color: #ffffff;
-    color: black;
-}
-
-.title-form, .p-form {
-    text-align: center;
-}
-
-.title-form {
-    border-top: 10px solid #FFCA41;
-    font-size: 50px;
-    padding-top: 20px;
-}
-
-.p-form {
-    font-size: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 70%;
-    margin: 0 auto;
-    padding: 20px 0 40px 0;
-    align-items: center;
-}
-
-fieldset {
-    margin: auto;
-    border: none;
-    border-bottom: 3px solid #FF9593;
-}
-
-fieldset:last-of-type {
-    border: none;
-}
-
-.fs1 {
-    border-top: 3px solid #FF9593;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-}
-
-input {
-    display: block;
-    width: 500px;
-}
-
-input, textarea {
-    background-color: #FF9593;
-    border: 1px solid #FFCA41;
-    color: #000000;
-}
-
-textarea {
-    width: 500px;
-    height: auto;
-}
-
-#time-contact {
-    width: 500px;
-}
-
-div {
-    display: inline;
-    justify-content: space-between;
-}
-
-#reset, #submit {
-    width: 100px;
-} 
+/* ****** Contact Form Style ******* */
