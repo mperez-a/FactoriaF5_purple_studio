@@ -300,10 +300,6 @@ input, textarea, select {
     border-radius: 10px;.
 }
 
-input, select {
-    height: 1.875rem;
-}
-
 input, textarea {
     background-color: #FF9593;
     opacity: 0.9;
@@ -341,7 +337,7 @@ input, textarea {
 @media screen and (max-width: 600px)
 {
     #reset, #submit {
-    font-size: 1rem;
+    font-size: 1.4vw;
     }
 }
 
