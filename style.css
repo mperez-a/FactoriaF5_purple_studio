@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;700&family=Jost:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-*{
+* {
     margin: 0px;
     font-family: 'Jost', sans-serif;
 }
+
 /*header*/
-header{
+header {
     background-color: #FF7F99;
     height: 100px;
     display: flex;
@@ -13,33 +15,36 @@ header{
     align-items: center;
     padding: 0px 60px;
 }
-.logo{
+
+.logo {
     font-family: 'Alumni Sans', sans-serif;
     color: #FFFFFF;
     font-size: 48px;
     align-items: baseline;
 }
 
-.logo-studio{
+.logo-studio {
     font-family: 'Alumni Sans', sans-serif;
     color: #FFCA41;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: white;
-}
-nav a {
     font-weight: 200;
     font-size: 24px;
     margin-left: 55px;
 }
-nav a:hover{
+
+nav a:hover {
     color: #FFCA41;
 }
-.link-button{
+
+.link-button {
     margin: 0;
 }
-.button-contact{
+
+.button-contact {
     color: white;
     font-size: 24px;
     font-weight: 200;
@@ -50,19 +55,22 @@ nav a:hover{
     padding: 8px 40px;
     margin-left: 45px;
 }
-.button-contact:hover{
+
+.button-contact:hover {
     background-color: #FFCA41;
 }
+
 /*main page flexbox with 2 divs*/
-.hero-main{
+.hero-main {
     display: flex; 
     width: 85%;
     align-items: center;
     margin: 0 auto;
     justify-content: space-evenly;
 }
+
 /*part left*/
-.bg-div{
+.bg-div {
     background-color: #FF7F99;
     border-radius: 272px 0px 272px 272px;
     display: flex;
@@ -72,29 +80,34 @@ nav a:hover{
     width: 544px;
     height: 544px;
 }
-img.coders{
+
+img.coders {
     height: 454px;
     margin: 150px;                     
 }
+
 /*part right*/
-.main-text{
+.main-text {
     width: 520px;
     margin-left: 80px;
     padding-bottom: 60px;
 }
-h1{
+
+h1 {
     font-size: 96px;
     line-height: 70px;
     font-weight: 400;
     color: #CD5C6E;
 }
-h3{
+
+h3 {
     font-size: 26px;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 25px;
 }
-button.action-main, button.action{
+
+button.action-main, button.action {
     background-color: #FFCA41;
     border-radius: 35px;
     color: white;
@@ -103,65 +116,76 @@ button.action-main, button.action{
     border: none;
     padding: 15px 40px;
 }
+
 /*personal page flexbox with 2 divs*/
-.hero{
+.hero {
     display: flex;
     width: 85%;
     margin: 0 auto;
     justify-content: space-evenly;
 }
+
 /*part left*/
-.box-left{
+.box-left {
     position: relative;
     box-sizing: border-box;
 }
-.girls{
+
+.girls {
     position: absolute;
     height: 615px; 
     top: 2px;
     left: -34px;          
 }
-.bg{
+
+.bg {
     background-color: #FF7F99;
     border-radius: 272px 0px 272px 272px;
     width: 544px;
     height: 544px;
     margin: 40px 0;
 }
+
 /*part right*/
-.main-text2{
+.main-text2 {
     padding-top: 80px;
     width: 520px;
     margin-left: 80px;
 }
-.text{
+
+.text {
     font-size: 20px;
     text-align: justify;
 }
-.contacts{
+
+.contacts {
     margin-top: 40px;
     display: flex;
     align-items: flex-start;
 }
-button.action{
+
+button.action {
     padding: 10px 40px;
 }
 
 /*footer*/
-footer{
+footer {
     background-color: #FF7F99;
     display: flex;
 }
-footer img{
+
+footer img {
     height: 277px;
 }
-img.icon{
+
+img.icon {
     height: 49px;
     width: 49px;
     border-radius: 6px;
     margin-right: 20px;
 }
-ul{
+
+ul {
     list-style: none;
     text-align: center;
     display: flex;
@@ -171,65 +195,76 @@ ul{
     margin-right: auto;
     padding: 45px 45px 90px 45px;
 }
-ul li:first-of-type{
+
+ul li:first-of-type {
     padding-left: 20px;
 }
-a.card span:nth-child(2){
+
+a.card span:nth-child(2) {
     color: white;
     font-size: 24px;
     font-weight: 300;
     margin-top: -20px;
 }
-a.card span:nth-child(3){
+
+a.card span:nth-child(3) {
     font-size: 18px;
     margin-bottom: 10px;
     color: black;
 }
-a.card{
+
+a.card {
     display: flex;
     flex-direction: column;
     margin-left: -20px;
     text-decoration: none;
 }
+
 /*for small laptops and big tablets*/
 @media screen and (max-width: 1201px) {
     header{
         padding: 0 1em;
     }
+
     .bg-div{
         display: none;
     }
+
     .hero-main{
         padding: 5em;
         justify-content: space-evenly;
         text-align: center;
     }
+
     .main-text{
         margin-left: 0px;
     }
+
     ul {
         flex-wrap: wrap;
     }
-    .hero{
+
+    .hero {
         align-items: unset;
+        padding: 40px;
+        justify-content: center;
     }
-    .bg{
+
+    .bg {
         width: 250px;
         height: 250px;
         border-radius: 125px 0 125px 125px;
         margin: 0px;
     }
-    .girls{
+
+    .girls {
         height: 277px; 
         top: -13px;
         left: -13px;          
     }
-    .main-text2{
+
+    .main-text2 {
         padding: 0;
-    }
-    .hero{
-        padding: 40px;
-        justify-content: center;
     }
 }
 /* in process...
@@ -241,7 +276,7 @@ a.card{
     }
 }*/
 
-/* ****** Contact Form Style ******* */
+/* ****** ContactForm Style ******* */
 
 .link-index {
     text-decoration: none;
@@ -334,16 +369,18 @@ input, textarea {
     transform: translateY(4px);
 }
 
-@media screen and (max-width: 600px)
+@media only screen and (max-width: 600px)
 {
     #reset, #submit {
     font-size: 1.4vw;
     }
 }
 
-@media screen and (max-width: 992px)
+@media only screen and (max-width: 992px)
 {
     #reset, #submit {
     font-size: 1rem;
     }
 }
+
+/* ******** Manuela's page ************ */
